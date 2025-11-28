@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>GEOG 464 - Lab 7</title>
+        
+		<!--put your external stylesheet links here-->
+		<link rel="stylesheet" href="css/styles.css">
+		<!-- link to leaflet styles -->
+		<link rel="stylesheet" type="text/css" href="lib/leaflet/leaflet.css" />
+		<!-- link to leaflet scripts -->
+		<script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+
+		<!--you can also place internal styles here; you would place these within <style> tags-->
+		
+    </head>
+
+    <body>
+        <!--put your initial page content here-->
+		<div id="div1">
+			<p>Q2 - the style function sets the styles of the point marker that we add to the map. It controls the line type (solid/dash), weight, how lines interact and end, border presence and colour, and colour and opacity (for lines and fill).
+			<br> Q4: feature - the feature/oject in teh data set we are selecting, layer: the layer in which it is selected (since the data is added as a layer to the map) <br>
+			Q5: layer.options.fill tells Leaflet how to style the layer (is it filled y/n) while layer.getLatLong is just a command that retrieves properties from the dataset. <br>
+			Q6 it overrides the style all and makes every point transparent (no fill) and increases the radius.</p>
+		</div>
+		
+		<div id="mapdiv">
+		</div>
+
+		<select class="li-nav" name="mapdropdown" id="mapdropdown" onChange="loadMap(this.value);">
+	<option value="map0" selected="selected" disabled>Load a map</option>
+	<option value='mapa'>Map A</option>
+	<option value='mapb'>Map B</option>
+</select>
+		
+        <!--you can also use this space for internal scripts; you would place these within <script> tags-->
+
+		<!--put your external script links here-->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
